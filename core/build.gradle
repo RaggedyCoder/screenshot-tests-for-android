@@ -38,6 +38,13 @@ android {
   }
 }
 
+afterEvaluate {
+  generateReleaseBuildConfig.enabled = false
+  tasks.getByName("androidJavadoc") {
+    exclude '**/BUCK'
+  }
+}
+
 dependencies {
   compileOnly deps.jsr305
 

@@ -33,6 +33,13 @@ android {
   }
 }
 
+afterEvaluate {
+  generateReleaseBuildConfig.enabled = false
+  tasks.getByName("androidJavadoc") {
+    exclude '**/BUCK'
+  }
+}
+
 dependencies {
   implementation project(':core')
   implementation deps.lithoCore
