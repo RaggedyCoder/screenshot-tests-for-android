@@ -30,7 +30,6 @@ buildscript {
 apply plugin: 'groovy'
 apply plugin: 'kotlin'
 apply plugin: "java-gradle-plugin"
-apply plugin: 'com.vanniktech.maven.publish'
 
 final GENERATED_PACKAGE_NAME = "com.facebook.testing.screenshot.generated"
 final GENERATED_BUILD_DIR =
