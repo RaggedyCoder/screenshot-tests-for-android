@@ -40,7 +40,7 @@ android {
 
 afterEvaluate {
   generateReleaseBuildConfig.enabled = false
-  tasks.getByName("androidJavadoc") {
+  tasks.getByName("androidJavadocs") {
     exclude '**/BUCK'
   }
 }
