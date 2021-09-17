@@ -15,6 +15,7 @@
  */
 
 apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.dokka'
 apply plugin: "com.vanniktech.maven.publish"
 
 group = 'com.facebook.testing.screenshot'
@@ -40,7 +41,7 @@ android {
 
 afterEvaluate {
   generateReleaseBuildConfig.enabled = false
-  tasks.getByName("androidJavadocs") {
+  tasks.withType(Javadoc) {
     exclude '**/BUCK'
   }
 }
