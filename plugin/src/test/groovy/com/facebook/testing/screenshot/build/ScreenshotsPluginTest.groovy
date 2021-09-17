@@ -44,7 +44,9 @@ class ScreenshotsPluginTest {
     project.getPluginManager().apply ScreenshotsPlugin
 
     project.repositories {
+      gradlePluginPortal()
       mavenCentral()
+      google()
     }
 
     project.android {

@@ -16,10 +16,9 @@
 
 buildscript {
   repositories {
+    gradlePluginPortal()
     mavenCentral()
     google()
-    mavenLocal()
-    jcenter()
   }
   dependencies {
     classpath plugs.kotlin
