@@ -15,8 +15,6 @@
  */
 
 apply plugin: 'com.android.library'
-apply plugin: 'org.jetbrains.dokka'
-apply plugin: "com.vanniktech.maven.publish"
 
 group = 'com.facebook.testing.screenshot'
 
